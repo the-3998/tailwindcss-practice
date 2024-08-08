@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="flex items-center">
+        <img
+          src="./assets/asset 0.png"
+          alt="Logo"
+          class="object-cover max-w-12 max-h-12"
+        />
+        <span class="text-lg font-Poppins font-semibold">ToDesktop</span>
+      </a>
+      <!-- navmenu -->
+      <div class="hidden md:flex gap-5 lg:gap-12">
+        <a href="#" class="font-poppins font-semibold hover:text-blue-800"
+          >Pricing</a
+        >
+        <a href="#" class="font-poppins font-semibold hover:text-blue-800"
+          >Docs</a
+        >
+        <a href="#" class="font-poppins font-semibold hover:text-blue-800"
+          >Changelog</a
+        >
+        <a href="#" class="font-poppins font-semibold hover:text-blue-800"
+          >Blogs</a
+        >
+        <a href="#" class="font-poppins font-semibold hover:text-blue-800"
+          >Login</a
+        >
+      </div>
+
+      <button
+        class="p-2 md:border-gray-300 md:border-2 md:rounded-lg md:flex hover:border-gray-400 gap-3"
+        onclick="handlemenu()"
+      >
+        <!-- <img src="./assets/asset 58.svg" alt="Menu" class="object-cover max-w-12 max-h-12 bg-zinc-800">
+              -->
+
+        <img src="./assets/asset 1.svg" alt="image" class="hidden md:flex" />
+        <h5 class="hidden md:flex font-semibold font-Poppins">
+          Electron Click
+        </h5>
+        <img src="./assets/asset 59.svg" alt="image" class="hidden md:block" />
+        <i
+          class="ri-menu-line md:hidden inline-block object-cover max-w-25 max-h-25 w-6 h-6"
+        ></i>
+      </button>
+
+      <!-- menu Dialog -->
+      <div id="nav-dialog" class="hidden md:hidden fixed bg-white inset-0 p-3">
+        <div class="flex items-center justify-between">
+          <a href="#" class="flex items-center">
+            <img
+              src="./assets/asset 0.png"
+              alt="Logo"
+              class="object-cover max-w-12 max-h-12"
+            />
+            <span class="text-lg font-Poppins font-semibold">ToDesktop</span>
+          </a>
+          <button onclick="handlemenu()" class="p-2">
+            <i
+              class="ri-close-line md:hidden inline-block object-cover max-w-25 max-h-25 w-7 h-7 cursor-pointer"
+            ></i>
+          </button>
+        </div>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="block font-Poppins font-semibold m-3 p-3 hover:bg-slate-200 rounded-lg"
+            >Pricing</a
+          ><a
+            href="#"
+            class="block font-Poppins font-semibold m-3 p-3 hover:bg-slate-200 rounded-lg"
+            >Docs</a
+          ><a
+            href="#"
+            class="block font-Poppins font-semibold m-3 p-3 hover:bg-slate-200 rounded-lg"
+            >Blogs</a
+          ><a
+            href="#"
+            class="block font-Poppins font-semibold m-3 p-3 hover:bg-slate-200 rounded-lg"
+            >Login</a
+          >
+          <div class="border-t-2 mt-6 "></div>
+          <div class="m-4 mt-6">
+            <button class="flex gap-2 border-2 border-gray-300 p-2 rounded-lg hover:border-gray-400">
+                <img src="./assets/asset 1.svg" alt="image" class=" md:flex" />
+                <h5 class="flex font-semibold font-Poppins">
+                Electron Click
+                </h5>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

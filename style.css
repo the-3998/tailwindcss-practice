@@ -8,9 +8,13 @@
  
 body,
 html {
-  height: 100%;
-  width: 100%;
+
+  overflow-x: hidden;
+
 }
 :root{
     --primary:#3238f2;
+}
+.container {
+  @apply px-6 py-12 max-e-7xl mt-16 lg:px-8 lg:mt-32;
 }
